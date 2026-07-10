@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For My Queen, Swathi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --ruby: #be123c; --gold: #fbbf24; --rose-bg: #fff0f3; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: radial-gradient(circle at center, #fff1f2 0%, #fecdd3 100%);
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .script-font { font-family: 'Sacramento', cursive; }
+
+        /* --- ANIMATIONS --- */
+        @keyframes float { 0% { transform: translateY(100vh) scale(0.5); opacity: 0; } 50% { opacity: 0.5; } 100% { transform: translateY(-10vh) scale(1.2); opacity: 0; } }
+        .heart-bg { position: fixed; bottom: -20px; animation: float 10s linear infinite; pointer-events: none; z-index: 0; }
+        
+        @keyframes shimmer { 0% { border-color: #f43f5e; box-shadow: 0 0 5px #f43f5e; } 50% { border-color: #fbbf24; box-shadow: 0 0 15px #fbbf24; } 100% { border-color: #f43f5e; box-shadow: 0 0 5px #f43f5e; } }
+        .magic-border { animation: shimmer 3s infinite; transition: all 0.3s ease; }
+
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(244, 63, 94, 0); } }
+        .pulse-btn { animation: pulse-glow 2s infinite; }
+
+        /* Hide Scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 text-gray-800">
+
+    <div class="heart-bg text-2xl text-rose-300" style="left: 10%; animation-delay: 0s;">❤</div>
+    <div class="heart-bg text-4xl text-red-400" style="left: 25%; animation-delay: 2s;">💖</div>
+    <div class="heart-bg text-xl text-pink-400" style="left: 50%; animation-delay: 4s;">💕</div>
+    <div class="heart-bg text-3xl text-rose-500" style="left: 75%; animation-delay: 6s;">❤</div>
+    <div class="heart-bg text-5xl text-red-300" style="left: 85%; animation-delay: 1s;">✨</div>
+
+    <div class="relative w-full max-w-md bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl border-2 border-white z-10 overflow-hidden">
+        
+        <div class="bg-gradient-to-r from-rose-500 to-pink-600 p-6 pt-8 text-center relative">
+              <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+              <h1 class="script-font text-6xl text-white font-bold drop-shadow-md mb-1 animate-bounce">To My Queen</h1>
+              <h2 class="text-rose-100 font-bold tracking-[0.3em] text-xs uppercase">SWATHI</h2>
+        </div>
+
+        <div class="p-6 space-y-2">
+            <p class="text-center text-xs text-rose-500 font-bold uppercase tracking-widest mb-2">Our Memories (Swipe ->)</p>
+            
+            <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar snap-x">
+                
+                <div class="snap-center shrink-0 relative w-64 h-80 bg-rose-50 rounded-2xl border-4 border-rose-200 magic-border shadow-lg overflow-hidden">
+                    <img src="1.jpg" alt="Memory 1" class="w-full h-full object-cover absolute inset-0 z-10">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 z-20">
+                        <p class="text-white text-center font-bold text-sm">My Beautiful World 🌍</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 relative w-64 h-80 bg-rose-50 rounded-2xl border-4 border-rose-200 magic-border shadow-lg overflow-hidden">
+                    <img src="2.jpg" alt="Memory 2" class="w-full h-full object-cover absolute inset-0 z-10">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 z-20">
+                        <p class="text-white text-center font-bold text-sm">Forever Yours ❤</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 relative w-64 h-80 bg-rose-50 rounded-2xl border-4 border-rose-200 magic-border shadow-lg overflow-hidden">
+                    <img src="3.jpg" alt="Memory 3" class="w-full h-full object-cover absolute inset-0 z-10">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 z-20">
+                        <p class="text-white text-center font-bold text-sm">Pure Elegance ✨</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 relative w-64 h-80 bg-rose-50 rounded-2xl border-4 border-rose-200 magic-border shadow-lg overflow-hidden">
+                    <img src="4.jpg" alt="Memory 4" class="w-full h-full object-cover absolute inset-0 z-10">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 z-20">
+                        <p class="text-white text-center font-bold text-sm">My Happiness 💖</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 relative w-64 h-80 bg-rose-50 rounded-2xl border-4 border-rose-200 magic-border shadow-lg overflow-hidden">
+                    <img src="5.jpg" alt="Memory 5" class="w-full h-full object-cover absolute inset-0 z-10">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 z-20">
+                        <p class="text-white text-center font-bold text-sm">My Forever Girl 🥰</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 relative w-64 h-80 bg-rose-50 rounded-2xl border-4 border-rose-200 magic-border shadow-lg overflow-hidden">
+                    <img src="6.jpg" alt="Memory 6" class="w-full h-full object-cover absolute inset-0 z-10">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 z-20">
+                        <p class="text-white text-center font-bold text-sm">Mine, Until The End. 💖</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="px-6 pb-2">
+            <div class="bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl shadow-sm">
+                <p id="typing-quote" class="text-gray-700 italic text-sm leading-relaxed font-medium min-h-[60px]"></p>
+            </div>
+        </div>
+
+        <div class="p-6 pt-4 text-center">
+            <button id="surprise-btn" onclick="reveal()" class="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold py-4 rounded-full shadow-lg pulse-btn transform transition active:scale-95">
+                Tap for a Surprise 🎁
+            </button>
+
+            <div id="surprise-box" class="hidden mt-6 transform transition-all duration-700 scale-0 origin-center">
+                <div class="text-6xl mb-2 animate-bounce">💍</div>
+                <h3 class="text-3xl font-bold text-rose-600 script-font">I Love You!</h3>
+                <p class="text-gray-600 text-sm mt-1 font-semibold">I'm yours, until the end of time.</p>
+            </div>
+        </div>
+        
+        <div class="bg-rose-50 p-3 text-center border-t border-rose-100">
+            <p class="text-xs text-rose-300">Designed with ❤ by Sathish Kumar</p>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. IMAGE SYSTEM ---
+        window.onload = function() {
+            typeWriter(); // Start the typing effect
+        };
+
+        // --- 2. TYPING EFFECT (Updated Name) ---
+        const text = "Neerootru odum dhisai, kadalai noki dhaan... 🌊 Adhu pōla, en idhayathin payanam unnai nōkki dhaan. ❤ You are my world, Swathi, and I will be by your side until the very end.";
+        const quoteBox = document.getElementById('typing-quote');
+        let i = 0;
+        
+        function typeWriter() {
+            if (i < text.length) {
+                quoteBox.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            } else {
+                quoteBox.style.borderRight = 'none';
+            }
+        }
+
+        // --- 3. SURPRISE REVEAL ---
+        function reveal() {
+            const btn = document.getElementById('surprise-btn');
+            const box = document.getElementById('surprise-box');
+            btn.style.display = 'none';
+            box.classList.remove('hidden');
+            setTimeout(() => box.classList.remove('scale-0'), 50);
+            createConfetti();
+        }
+
+        function createConfetti() {
+            for(let k=0; k<30; k++) {
+                let conf = document.createElement('div');
+                conf.innerText = ['❤','🌹','✨'][Math.floor(Math.random()*3)];
+                conf.style.position = 'fixed';
+                conf.style.left = Math.random()*100 + 'vw';
+                conf.style.top = '-50px';
+                conf.style.fontSize = (Math.random()*20 + 10) + 'px';
+                conf.style.animation = `float ${Math.random()*3 + 2}s ease-in`;
+                conf.style.zIndex = 100;
+                document.body.appendChild(conf);
+            }
+        }
+    </script>
+</body>
+</html>
